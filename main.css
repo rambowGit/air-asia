@@ -84,10 +84,14 @@ img {
 .menu {
 
 }
+.menu__list {
+  display: flex;
+  padding-top: 5px;
+}
 .menu__item {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
-  margin-right: 51px;
+  margin-right: 55px;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -414,8 +418,11 @@ img {
 .socials {
   margin-right: 74px;
 }
+.socials-list {
+  display: flex;
+}
 .socials__item {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   margin-right: 10px;
 }
