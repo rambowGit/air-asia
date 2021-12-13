@@ -497,7 +497,7 @@ img {
   margin-right: 3px;
 }
 .breadcrumbs__item :after {
-  display: inline-block; /* fortext-decoration:*/
+  display: inline-block; /* for text-decoration:*/
   padding-right: 1px ;
   padding-left: 2px ;
   content: "/";
@@ -507,7 +507,14 @@ img {
 
 .breadcrumbs__item:last-child :after {
  display: none;
+ padding-right: 1px ;
+ padding-left: 2px ;
 }
+.breadcrumbs__item:last-child {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+ }
 .breadcrumbs__item--active .breadcrumbs__link {
   font-weight: bold;
 } 
