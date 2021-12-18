@@ -36,6 +36,11 @@ img {
   display: block;
   max-width: 100%;
 }
+button {
+ background: transparent;
+ border: none;
+ cursor: pointer;
+}
 
 .wrapper {
   display: flex;
@@ -261,6 +266,14 @@ img {
 }
 .btn--color--red {
   background: #F5170E;
+  color: #FFFFFF;
+}
+.btn--color--grey {
+  background: #8E8E8E;
+  color: #FFFFFF;
+}
+.btn--color--grey:hover {
+  background: #2B2B2B;
   color: #FFFFFF;
 }
 .news {
@@ -623,11 +636,9 @@ img {
 }
 
 /* reviews page */
+
 .page-content__reviews {
   padding-top: 100px;
-}
-.reviews__item {
-  /* margin-bottom: 20px; */
 }
 .reviews {
   column-count: 2;
@@ -699,4 +710,89 @@ img {
   font-size: 14px;
   color: #1A1B1E;
   font-weight: bold;
+}
+.paginator__reviews {
+  margin-bottom: 42px;
+}
+.separator {
+  background: url(./img/reviews/couple.png) right 28% bottom no-repeat, url(./img/reviews/middleline.png);
+  min-height: 363px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.separator__content {
+  max-width: 50%;
+}
+.setarator__title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.4;
+  max-width: 46%
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 30px;
+}
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: none;
+  background: #FFFFFF;
+  padding: 22px 30px;
+  font-size: 18px;
+  color: #1A1B1E;
+}
+.form__input:last-child {
+  margin-right: 0;
+}
+.form__input::placeholder {
+  color: #666666
+  ;
+}
+.form__input--textarea {
+  height: 235px;
+}
+.form__controls {
+  display: flex;
+  margin-bottom: 35px;
+}
+.form__controls-title {
+  width: 40%;
+  font-size: 18px;
+}
+.controls {
+  display: flex;
+  flex:1;
+  flex-wrap: wrap;
+}
+.controls__elem {
+  cursor: pointer;
+}
+
+/*закраска элемента, следующего за чекбоксом*/
+.controls__checkbox:checked ~ .controls__tag{
+  background: #B9EAE4;
+}
+.controls__checkbox {
+  display: none;
+}
+.controls__item {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.controls__item:last-child {
+  margin-right: 0;
+}
+.form_btns {
+  display: flex;
+  justify-content: flex-end;
+}
+.form__btn {
+  margin-right: 20px;
+}
+.form__btn:last-child {
+  margin-right: 0;
 }
