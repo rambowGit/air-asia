@@ -594,7 +594,13 @@ button {
 .inner-section {
   background: #fff;
   color: #1A1B1E;
-  padding: 72px 0;
+  padding-top: 72px;
+  padding-right: 0;
+  padding-bottom: 72px;
+  padding-left: 0;
+}
+.inner-section__review {
+  padding-top: 10px;
 }
 .inner-section--bg--grey {
   background: #F4F5F5 ;
@@ -604,6 +610,9 @@ button {
   font-weight: bold;
   margin-bottom: 50px;
   margin-top: 52px;
+}
+.inner-section__title-reviews {
+  margin-bottom: 54px
 }
 .partners {
   display: flex;
@@ -733,7 +742,7 @@ button {
 
 .form__row {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .form__input {
   flex: 1;
@@ -741,7 +750,7 @@ button {
   border-radius: 5px;
   border: none;
   background: #FFFFFF;
-  padding: 22px 30px;
+  padding: 20px 26px;
   font-size: 18px;
   color: #1A1B1E;
 }
@@ -757,10 +766,10 @@ button {
 }
 .form__controls {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 .form__controls-title {
-  width: 40%;
+  width: 38%;
   font-size: 18px;
 }
 .controls {
@@ -789,10 +798,80 @@ button {
 .form_btns {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 26px
 }
 .form__btn {
-  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 35px;
+  padding: 18px 29px 18px 30px;
+  font-size: 14px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  width: 168px;
+  margin-right: 19px;
 }
 .form__btn:last-child {
   margin-right: 0;
+}
+
+/* Welcome page */
+
+.welcome {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
+  align-items: center;
+  justify-content: center;
+
+  background: url("./img/welcome/shades.png") center top 360px no-repeat, url("./img/welcome/bg.png") center bottom / cover no-repeat;
+}
+.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.central__logo {
+  margin-top: 145px;
+}
+.central__desc {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+.welcome__btn {
+  padding: 18px 60px;
+}
+
+/* animation */
+.central--asia {
+  opacity: 0;
+  animation: zoom .9s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom {
+  from {
+    transform: scale(.7);
+  }
+
+  20% {
+    transform: scale(1.15);
+  }
+
+  40% {
+    transform: scale(.9);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
