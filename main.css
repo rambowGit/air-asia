@@ -68,11 +68,12 @@ button {
   min-height: 523px;
 }
 .header {
+  height: 62px;
   padding-top: 21px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .header__col {
   display: flex;
@@ -94,7 +95,6 @@ button {
   padding-top: 5px;
 }
 .menu__item {
-  /* display: inline-block; */
   vertical-align: middle;
   margin-right: 55px;
 }
@@ -109,7 +109,8 @@ button {
   color: #DA0100;
 }
 .contacts {
-
+  display: inline-flex;
+  flex-direction: column;
   font-style: normal;
   text-align: right;
   line-height: 1.1;
@@ -127,6 +128,35 @@ button {
 .contacts__workhours:hover{
   color: #FFFFFF;
 }
+
+.dropdown__menu {
+  background: url("./img/dropdown.png") no-repeat;
+  width: 160px;
+  height: 80px;
+  color: #1E1F20;
+  font-size: 13px;
+  /* display: flex; */
+  margin-left: 32px;
+  display: none;
+}
+.contacts:hover .dropdown__menu {
+  display: flex;
+}
+
+.dropdown__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dropdown__item {
+  padding: 5px 12px;
+}
+.dropdown__item--work-day {
+  font-weight: bold;
+}
+
 .contacts__desc {
   color: #9A9A9A;
   font-size: 11px;
@@ -776,6 +806,8 @@ button {
   display: flex;
   flex:1;
   flex-wrap: wrap;
+  margin-bottom: -10px;
+  margin-right: -10px;
 }
 .controls__elem {
   cursor: pointer;
